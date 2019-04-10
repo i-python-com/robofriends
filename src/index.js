@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import CardList from './CardList';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
+import { robots } from './robots';
 
-ReactDOM.render( < h1 > Hello, world < /h1>, document.getElementById('root'));
+ReactDOM.render(<CardList robots={robots} />, document.getElementById('root'));
 
-        serviceWorker.unregister();
+serviceWorker.unregister();
